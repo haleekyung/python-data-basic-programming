@@ -35,6 +35,8 @@ https://haleekyung.notion.site/e4544c65cde14c42ba92d8bbc73211f7
 백준 코드 (Bronze 2 - Silver 5) 및 solved.ac의 문제를 푸는 방식으로 진행한다. solved.ac의 Bronze - Silver 구간에서 풀 수 있는 문제 중 가장 많이 푼 문제를 위주로 나열하여 문제를 풀 수 있도록 한다. 
 
 **2) Bronze 2 (약 3주)**
+ 
 **3) Bronze 1 (약 4주)**
-**4) Silver 5 (약 3주)**
+ 
+**4) Silver 5 (약 4주)**
 
