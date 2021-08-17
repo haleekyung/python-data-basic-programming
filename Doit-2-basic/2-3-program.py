@@ -62,3 +62,58 @@ for i in [1, 2, 3, 4, 5, 6, 7, 8, 9]:
         print(i, "홀수")
     else:
         print(i, "짝수")
+
+
+### 서비스 가격 출력 프로그램 만들기
+def service_price():
+    service = input("서비스 종류를 입력하세요 (a/b/c): ")
+    value = input("부가세 포함 여부를 입력하세요 (y/n): ")
+    if value == "y":
+        if service == "a":
+            result = 23 * 1.1
+        if service == "b":
+            result = 40 * 1.1
+        if service == "c":
+            result = 67 * 1.1
+    if value == "n":
+        if service == "a":
+            result = 23
+        if service == "b":
+            result = 40
+        if service == "c":
+            result = 67
+
+    print(result,'만 원 입니다.')
+
+service_price()
+
+
+### 연습문제
+# 01.
+# print(14 % 4)
+# 답: 2
+# ----------
+# 02.
+# round(1.12345, 2)
+# >> 1.12
+# ----------
+# 03.
+a = int(input("나이를 입력하시오: "))
+print(40 - a)
+# ----------
+plus = lambda x, y : x + y
+plus(34, 54)
+# ----------
+def mean(a, b):
+    return (a + b) / 2
+
+mean(33, 22)
+45 + mean(33, 22)
+# ----------
+b = [1, 2, 3, 10, 11, 12]
+
+for i in b:
+    if i < 10:
+        print(i)
+    else:
+        print(i - 10)
