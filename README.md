@@ -30,6 +30,7 @@ https://haleekyung.notion.site/e4544c65cde14c42ba92d8bbc73211f7
 ## 공부 
 ### 01. Book (about a month)
 **01 - 기초 설명 및 설치(스킵)**
+
 **02 - 기초 문법으로 프로그램 만들기(약 4일)**
 
 02-1. 파이썬을 계산기로 활용해보기
