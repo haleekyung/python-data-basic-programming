@@ -1,13 +1,38 @@
-import os, re
+import os, re, csv
 import usecsv
+
+# 모듈
+def opencsv(filename):
+    f = open(filename, 'r')
+    reader = csv.reader(f)
+    output = []
+    for i in reader:
+        output.append(i)
+    f.close()
+    return output
+
+def writecsv(filename, the_list):
+    with open(filename, 'w', newline='') as f:
+        a = csv.writer(f, delimiter = ',')
+        a.writerows(the_list)
+
+def switch(listName):
+    for i in listName:
+        for j in i:
+            try:
+                i[i.index(j)] = float(re.sub(',', '', j))
+            except:
+                pass
+    return listName
+
 
 os.chdir(r'/Users/leekyungha/PycharmProjects/python-data-basic-programming/Data')
 
 # 파일 열기
-total = usecsv.opencsv('popSeoul.csv')
+total = opencsv('popSeoul.csv')
 
 # 콤마 등을 제거하는 함수 usecsv.switch를 사용
-newPop = usecsv.switch(total)
+newPop = switch(total)
 
 # 4번째 구까지만 시험으로 출력
 print(newPop[:4])
@@ -57,8 +82,7 @@ for i in newPop:
         foreign = round(i[2] / (i[1] + i[2]) * 100, 1)
         if foreign > 3:
             new.append(i[0], i[1], i[2], foreign)
-
     except:
         pass
 
-usecsv.writecsv('newPop.csv', new)
+writecsv('newPop.csv', new)
