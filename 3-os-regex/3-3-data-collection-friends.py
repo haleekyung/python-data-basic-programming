@@ -1,5 +1,5 @@
 import re, os, codecs
-os.chdir(r'/Users/leekyungha/PycharmProjects/python-data-basic-programming/Data')
+os.chdir(r'/Data')
 
 # 열기
 f = open('friends.txt', 'r', encoding = 'utf8')

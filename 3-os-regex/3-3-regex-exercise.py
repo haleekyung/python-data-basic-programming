@@ -1,5 +1,5 @@
 import os, re
-os.chdir(r'/Users/leekyungha/PycharmProjects/python-data-basic-programming/Data')
+os.chdir(r'/Data')
 
 f = open('youtube.txt', 'r', encoding='utf8')
 youtube = f.read()

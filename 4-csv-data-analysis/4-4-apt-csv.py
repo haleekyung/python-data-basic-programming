@@ -1,5 +1,5 @@
 import os, re, csv
-os.chdir(r'/Users/leekyungha/PycharmProjects/python-data-basic-programming/Data')
+os.chdir(r'/Data')
 
 # 모듈
 def opencsv(filename):

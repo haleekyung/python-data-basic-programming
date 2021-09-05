@@ -26,7 +26,7 @@ def switch(listName):
     return listName
 
 
-os.chdir(r'/Users/leekyungha/PycharmProjects/python-data-basic-programming/Data')
+os.chdir(r'/Data')
 
 # 파일 열기
 total = opencsv('popSeoul.csv')

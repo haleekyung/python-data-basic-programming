@@ -1,6 +1,6 @@
 import os, re
 import usecsv # 모듈
-os.chdir(r'/Users/leekyungha/PycharmProjects/python-data-basic-programming/Data')
+os.chdir(r'/Data')
 
 total = usecsv.OpenCsv('popSeoul.csv')
 print(total[:5])

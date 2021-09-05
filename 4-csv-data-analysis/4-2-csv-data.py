@@ -1,5 +1,5 @@
 import csv, os
-os.chdir(r'/Users/leekyungha/PycharmProjects/python-data-basic-programming/Data')
+os.chdir(r'/Data')
 f = open('a.csv', 'r', encoding='utf-8-sig')
 
 # CSV에서 저장한 객체를 파이썬으로 읽으려면 csv.reader를 사용할 것
